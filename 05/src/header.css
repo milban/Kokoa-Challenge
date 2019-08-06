@@ -1,0 +1,18 @@
+.instagram-main .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  padding-bottom: 20px;
+}
+
+.main-header .main-header__logo {
+  font-family: 'Lobster';
+  font-size: 30px;
+}
+
+.main-header .main-header__short-cut {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}

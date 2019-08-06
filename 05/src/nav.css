@@ -1,0 +1,33 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0px;
+  height: 100px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 20px 15px 15px 20px;
+}
+
+.main-nav .main-nav__plus,
+.main-nav .main-nav__search,
+.main-nav .main-nav__heart,
+.main-nav .main-nav__me {
+  font-size: 10px;
+}
+
+.main-nav .main-nav__plus {
+  background-color: #1bb670;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+.main-nav .main-nav__search,
+.main-nav .main-nav__heart,
+.main-nav .main-nav__me {
+  color: grey;
+  opacity: 0.5;
+}

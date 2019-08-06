@@ -1,0 +1,48 @@
+.insta-story {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 0px 20px;
+  overflow-x: scroll;
+}
+
+.insta-story::-webkit-scrollbar {
+  display: none;
+}
+
+.insta-story .insta-story__me {
+  position: relative;
+}
+
+.insta-story .insta-story__me,
+.insta-story .insta-story__friend {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: grey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 15px -5px;
+}
+
+.insta-story .insta-story__plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 12.5px;
+  border: 1px solid white;
+  color: white;
+  top: 35px;
+  left: 40px;
+}
+
+.insta-story .insta-story__friends {
+  display: flex;
+}
+
+.insta-story .insta-story__friend {
+  margin-left: 10px;
+}

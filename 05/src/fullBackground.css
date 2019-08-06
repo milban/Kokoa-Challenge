@@ -1,0 +1,42 @@
+.full-bg-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.full-bg-wrapper .full-bg-wrapper__bg-left {
+  background-color: #b7b61b;
+  width: 35%;
+  height: 100%;
+}
+
+.full-bg-wrapper .full-bg-wrapper__bg-right {
+  background-color: #edf0f6;
+  width: 65%;
+  height: 100%;
+}
+
+.dot-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+}
+
+.full-bg-wrapper__bg-left > .dot-wrapper {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.full-bg-wrapper__bg-right > .dot-wrapper {
+  margin-top: 80vh;
+  margin-left: 60%;
+}
+
+.dot-wrapper .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #cedae2;
+  margin: 6px;
+}

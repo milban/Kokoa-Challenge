@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import './reset.css';
+@import './fullBackground.css';
+@import './header.css';
+@import './story.css';
+@import './post.css';
+@import './nav.css';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.instagram-main {
+  position: fixed;
+  top: 5%;
+  left: 15%;
+  width: 400px;
+  height: 90%;
+  border: 6px solid black;
+  border-radius: 50px;
+  background-color: #edf0f6;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.instagram-main::-webkit-scrollbar {
+  display: none;
+}
+
+.instagram-post {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  width: 400px;
+  height: 80%;
+  border: 6px solid black;
+  border-radius: 50px;
+  background-color: #edf0f6;
+}
+
+.avatar {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 15px -5px;
+}
