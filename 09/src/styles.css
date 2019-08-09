@@ -1,0 +1,175 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css?family=Blinker:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f7ff;
+  font-family: 'Blinker', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.phone {
+  width: 420px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
+}
+
+.screen {
+  background-image: linear-gradient(to bottom, #f9fafb, #e5e5e5);
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  padding: 0px 20px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0px;
+  background-color: #f9fafb;
+  padding: 40px 0px 20px 0px;
+  width: 100%;
+}
+
+.header span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main .main__popular-recipes {
+  width: 100%;
+}
+
+.popular-recipes .popular-recipes__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.popular-recipes .popular-recipes__view-all {
+  color: red;
+  font-size: 14px;
+}
+
+.popular-recipes .popular-recipes__list {
+  widows: 100%;
+  height: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popular-recipes__list .popular-recipes__recipe {
+  width: 48%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+
+.popular-recipes__list .popular-recipes__recipe:nth-child(1) {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ7HxulV_jm53xIg9yRNwYqO5d7cxm9BYRKHpT95GFBwVSVrucRw);
+}
+
+.popular-recipes__list .popular-recipes__recipe:nth-child(2) {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsylWVGlJRjwAe7gLbUeAzxCBVcfzTmpR0aiy_2xPo7-1aTdv);
+}
+
+.popular-recipes__list .popular-recipes__recipe:nth-child(3) {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+    url(https://www.todaysparent.com/wp-content/uploads/2016/05/smooth-foods.jpg);
+}
+
+.popular-recipes__list .popular-recipes__recipe:nth-child(4) {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIY6OlPPPkUVIU8UIvHD3yllCTR5i01uRD4d5xgXZsOFmsb-0Cw);
+}
+
+.other-recipes .other-recipes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-recipes .other-recipes__recipe {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-recipes__recipe .other-recipe__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-recipe__column span:nth-child(1) {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.other-recipe__column span:nth-child(2) {
+  font-size: 12px;
+  color: grey;
+  opacity: 0.7;
+}
+
+.other-recipes__recipe .fa-angle-right {
+  color: red;
+}
+
+.tab-bar {
+  width: 400px;
+  background-color: white;
+  position: sticky;
+  bottom: 0px;
+  padding: 20px 40px;
+  box-shadow: 5px 5px 40px rgba(118, 146, 180, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: rgba(170, 170, 170, 0.9);
+}
