@@ -1,0 +1,37 @@
+.smaller {
+  position: relative;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: #283a48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smaller:hover .smaller__content {
+  width: 50%;
+  height: 50%;
+  top: 10px;
+}
+
+.smaller__content {
+  position: absolute;
+  top: 0px;
+  background-color: #d6eff9;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.smaller__content img {
+  width: 100%;
+  height: 100%;
+}
+
+.smaller__bottom-content {
+  width: 100%;
+  height: 100px;
+  align-self: flex-end;
+  padding: 20px;
+}

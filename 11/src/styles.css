@@ -1,0 +1,8 @@
+@import './reset.css';
+@import './popUp.css';
+@import './comeUp.css';
+@import './smaller.css';
+
+* {
+  box-sizing: border-box;
+}

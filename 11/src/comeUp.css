@@ -1,0 +1,43 @@
+.come-up {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.come-up__main {
+  width: 100%;
+  height: 100%;
+  background-color: #faa3a1;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  background-color: #f0efef;
+}
+
+.come-up__content {
+  position: absolute;
+  background-color: #283a48;
+  bottom: 0px;
+  width: 100%;
+  height: 0px;
+  font-size: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.come-up:hover .come-up__main {
+  height: 70%;
+}
+
+.come-up:hover .come-up__content {
+  height: 30%;
+  font-size: 14px;
+  color: white;
+  padding: 20px;
+}
